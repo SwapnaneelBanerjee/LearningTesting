@@ -116,8 +116,8 @@ public class UsingKeywordsWithHybrid {
 		fileDataSheet = new File("FILE PATH HERE");  // add the accurate file path
 		fin = new FileInputStream(fileDataSheet);
 		wb = new XSSFWorkbook(fin);
-		cmdSh = wb.getSheet("Commands");
-		dataSh = wb.getSheet("Login");
+		cmdSh = wb.getSheet("Commands"); // sheet having the commands (keywords)
+		dataSh = wb.getSheet("Login"); // sheet having the data
 
 	    System.out.println("--- Starting Keyword Execution ---");
 
