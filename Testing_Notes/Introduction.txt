@@ -1,1 +1,2 @@
-
+What is Testing? 
+---> It is the process of evaluating a system to verify that it meets specified requirements and to identify defects (bugs). It is not just about "finding bugs," but about validating quality.
