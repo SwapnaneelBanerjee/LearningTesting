@@ -16,8 +16,7 @@ QE Role: We look for gaps. (e.g., "The requirement says users can log in, but it
 Low-Level vs. High-Level Testing
 ---> Low-Level Testing (LLT)
       Focus: The internal logic and components of the code.      
-      Types: Unit Testing (testing a single function) and Integration Testing (testing how two modules talk to each other).      
-      Who does it? Usually Developers or QE White-Box testers.
+      Types: Unit Testing (testing a single function) and Integration Testing (testing how two modules talk to each other).         Who does it? Usually Developers or QE White-Box testers.
 
      High-Level Testing (HLT)
       Focus: The system as a whole from an end-user perspective.      
@@ -25,11 +24,11 @@ Low-Level vs. High-Level Testing
       Who does it? Manual and Automation QEs.
 
 Functional vs. Non-Functional Testing
-Functional	"What does the system do?"	Login, Search, Adding to Cart, Payments.
-Non-Functional	"How does the system perform?"	Speed (Performance), Security, Usability, Load
+---> Functional	----> "What does the system do?"	 ---> Login, Search, Adding to Cart, Payments.
+---> Non-Functional ---> "How does the system perform?" ---> Speed (Performance), Security, Usability, Load
 
 Documentation
-This includes your Test Plan (the strategy) and Test Cases (the step-by-step instructions). Good documentation ensures that if you leave the company tomorrow, another QE can run your tests perfectly.
+---> This includes your Test Plan (the strategy) and Test Cases (the step-by-step instructions). Good documentation ensures that if you leave the company tomorrow, another QE can run your tests perfectly.
 
 Requirement Traceability Matrix (RTM)
 ---> The RTM is a table that maps Requirements to Test Cases.
