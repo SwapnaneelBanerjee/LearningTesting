@@ -14,3 +14,5 @@ The Documents: You analyze the BRD (Business Requirement Document) and SRS (Soft
 QE Role: We look for gaps. (e.g., "The requirement says users can log in, but it doesn't say what happens if they forget their password.")
 
 Low-Level vs. High-Level Testing
+
+Functional vs. Non-Functional Testing
