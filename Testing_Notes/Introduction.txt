@@ -16,3 +16,5 @@ QE Role: We look for gaps. (e.g., "The requirement says users can log in, but it
 Low-Level vs. High-Level Testing
 
 Functional vs. Non-Functional Testing
+
+Documentation & Traceability
