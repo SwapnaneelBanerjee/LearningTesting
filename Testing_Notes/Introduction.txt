@@ -1,2 +1,8 @@
 What is Testing? 
 ---> It is the process of evaluating a system to verify that it meets specified requirements and to identify defects (bugs). It is not just about "finding bugs," but about validating quality.
+
+Why is it needed?
+---> Cost-Saving: Fixing a bug in production is 10x more expensive than fixing it during development.
+Security: Ensures sensitive user data (like passwords) is protected.
+Customer Satisfaction: Provides a seamless, logic-driven user experience.
+Reliability: Confirms the software won't crash under pressure.
