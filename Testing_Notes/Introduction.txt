@@ -13,3 +13,4 @@ The Goal: To understand exactly what the client wants before a single line of co
 The Documents: You analyze the BRD (Business Requirement Document) and SRS (Software Requirement Specification).
 QE Role: We look for gaps. (e.g., "The requirement says users can log in, but it doesn't say what happens if they forget their password.")
 
+Low-Level vs. High-Level Testing
