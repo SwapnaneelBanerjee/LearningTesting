@@ -1,0 +1,27 @@
+1. What is @Test? (Definition)
+--->  It is the primary TestNG annotation used to mark a method as a Test Case.
+Purpose: It tells the TestNG engine that the annotated method is not a regular helper method, but a piece of logic that should be executed and reported on (Pass/Fail).
+Return Type: Methods marked with @Test must be public and should ideally return void.
+
+2. How it Works (The Execution Process)
+---> TestNG scans your project (or the TestNG Class) for the @Test marker.
+It uses Reflection API to invoke these methods at runtime.
+It wraps each test in a try-catch block internally:
+If no exception occurs, the test is marked Passed.
+If an AssertionError or any Exception occurs, it is marked Failed.
+If a prerequisite is not met, it is marked Skipped.
+
+3. When it Works (The Triggers)
+---> A @Test method executes when:
+You right-click the class and select Run as TestNG Test.
+You run a testng.xml file that includes the class or package. ----or using the xml we can run test suites
+Its dependencies (if any) have successfully finished.
+It is Enabled (the attribute enabled=true is the default).
+
+4. Priority? (Execution Order)
+---> By default, TestNG runs tests in alphabetical order by method name. And to change that order we use the priority attribute.
+Syntax: @Test(priority = 1)
+Calculation Rules:
+Lowest numbers run first: A test with priority = -1 runs before priority = 0.
+Default Value: If you don't assign a priority, the default is 0.
+Tie-breaking: If two tests have the same priority, they fallback to alphabetical order. 

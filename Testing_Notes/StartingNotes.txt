@@ -1,0 +1,24 @@
+Starting with TestNG
+
+1. The TestNG Lifecycle (Annotations)
+
+---> @BeforeSuite / @AfterSuite: Runs once for the entire project (good for database connections).
+
+---> @BeforeTest / @AfterTest: Runs once for the <test> block in testng.xml.
+
+---> @BeforeClass / @AfterClass: Runs once per Java class file.
+
+---> @BeforeMethod / @AfterMethod: Runs before/after every @Test. (Best for opening/closing the browser to ensure test independence).
+
+-------------------------------------------------------------------------------------------------------------------------------
+2. Assertions 
+
+---> Test Independence: Every test should be able to run alone. Do not make Test B depend on Test A being finished.
+
+---> XML Management: Use testng.xml to group your tests, pass parameters, and control parallel execution rather than running individual Java files.
+
+---> Avoid Hardcoding: Put your URLs and credentials in the @BeforeMethod or a properties file, not inside the @Test logic.
+
+---> Prioritization: Use @Test(priority = 1) if you absolutely need a specific order, but try to design tests that don't care about order.
+
+---> Reporting: TestNG generates a test-output folder automatically. Check emailable-report.html after your run to see a summary of passes and fails.
