@@ -1,0 +1,34 @@
+What are Design Models?
+---> Definition: Reusable solutions to recurring problems in software architecture.
+Purpose: To make code maintainable, readable, and reusable.
+In Automation: They prevent "Spaghetti Code" where locators and test logic are mixed together.
+Examples : Singleton, Observer, Factory, etc. 
+
+What is Page Object Model (POM)?
+---> The Core Idea: You create a separate Java class for every web page of your application (e.g., LoginPage.java, DashboardPage.java).
+Separation of Concerns:
+The Page Class: Stores the Locators (By IDs, XPaths) and the Actions (methods like typeUsername).
+The Test Class: Contains the Assertions and the "story" of the test (e.g., verifyLoginSuccess).
+
+Key Attributes of the POM concept :
+
+1. The "Single Point of Failure" Rule
+If the "Login" button ID changes on the website, you only fix it once in the LoginPage class. Without POM, you would have to search and replace that ID in every single test file.
+
+2. Methods Represent Actions
+Instead of writing driver.findElement(...).click() in your test, you create a method in the Page Class called clickLoginButton(). 
+
+Your test then looks like human-readable English:
+  loginPage.enterCredentials("user", "pass"); 
+  loginPage.clickLoginButton();
+
+3. No Assertions in Page Classes
+A common mistake is putting Assert.assertTrue inside a Page Class.
+Page Classes should only provide information or perform actions.
+Test Classes should make the final "Pass/Fail" decision.
+
+4. Object Chaining
+In advanced POM, a method can return the "Next Page."
+
+Example: A clickLogin() method in the LoginPage class can return a new DashboardPage(). 
+This allows you to "chain" actions in one line.
