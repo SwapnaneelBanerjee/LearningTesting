@@ -25,3 +25,5 @@ Calculation Rules:
 Lowest numbers run first: A test with priority = -1 runs before priority = 0.
 Default Value: If you don't assign a priority, the default is 0.
 Tie-breaking: If two tests have the same priority, they fallback to alphabetical order. 
+
+Types of Test :
