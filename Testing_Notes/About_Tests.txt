@@ -28,18 +28,19 @@ Tie-breaking: If two tests have the same priority, they fallback to alphabetical
 
 Types of Test :
 
-Unit Testing: Focuses on verifying the smallest parts of the application (like a single method or class) in isolation to ensure logic is correct.
+1. Unit Testing: Focuses on verifying the smallest parts of the application (like a single method or class) in isolation to ensure logic is correct.
 
-Integration Testing: Verifies that different modules or services of the application work correctly when combined together.
+2. Integration Testing: Verifies that different modules or services of the application work correctly when combined together.
 
-Smoke Testing: A high-level, "wide but shallow" suite that checks if the most critical functions of the application (like login or checkout) work after a new build.
+3. Smoke Testing: A high-level, "wide but shallow" suite that checks if the most critical functions of the application (like login or checkout) work after a new build.
 
-Sanity Testing: A subset of regression testing that focuses on a specific functional area or a bug fix to ensure the changes behave as expected before more rigorous testing.
+4. Sanity Testing: A subset of regression testing that focuses on a specific functional area or a bug fix to ensure the changes behave as expected before more rigorous testing.
 
-Regression Testing: A comprehensive suite executed after code changes to ensure that new updates have not negatively impacted or "broken" existing features.
+5. Regression Testing: A comprehensive suite executed after code changes to ensure that new updates have not negatively impacted or "broken" existing features.
 
-Functional Testing: Validates the software against the functional requirements or specifications to ensure it does exactly what the user expects.
+6. Functional Testing: Validates the software against the functional requirements or specifications to ensure it does exactly what the user expects.
 
-End-to-End (E2E) Testing: Simulates a real user scenario from start to finish (e.g., landing page to final payment) to validate the entire system flow and integration with external interfaces.
+7. End-to-End (E2E) Testing: Simulates a real user scenario from start to finish (e.g., landing page to final payment) to validate the entire system flow and integration with external interfaces.
 
-UI/Screen Testing: Focused specifically on the visual elements and user interface of the application to ensure buttons, fields, and layouts appear and function correctly across screens.
+8. UI/Screen Testing: Focused specifically on the visual elements and user interface of the application to ensure buttons, fields, and layouts appear and function correctly across screens.
+
